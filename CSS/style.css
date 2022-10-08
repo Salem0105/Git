@@ -1,0 +1,49 @@
+*{
+    font-family: 'Lucida Sans Unicode';
+    color: white;
+}
+
+body{
+    background-color: rgb(45, 43, 85);
+    text-align: center;
+}
+
+
+/*Decoración para cada comando y su descripción*/
+ul li p {
+    
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+    font-family: 'calibria', serif;
+    font-weight: lighter;
+}
+
+li{
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FFB5B2;
+    text-align: left; 
+    font-family: Verdana;
+}
+
+.lRoja{
+    font-family: 'calibria', serif;
+    font-weight: bold;
+    display: inline;
+    color: rgb(255, 62, 62);
+}
+
+.lVerde{
+    font-family: 'calibria', serif;
+    font-weight: bold;
+    display: inline;
+    color: #7BFF8C;
+}
+
+.lAzul{
+    font-family: 'calibria', serif;
+    font-weight: bold;
+    display: inline;
+    color: #43C9F4;
+}

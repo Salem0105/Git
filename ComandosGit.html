@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT_HTML_CSS</title>
+    <link rel="shortcut icon" href="icon/git.png" class="rel">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <H1>Comandos GIT</H1>
+        <summary>Uso de comandos git y adicionalmente una pequeña práctica de HTML y CSS</summary>
+    </header>
+
+    <ul class="comandos_basicos">
+    <!--    <li>git -v<p>Muestra la version de git</p></li>     -->
+        <li>git init <p>Creamos un repositorio de la carpeta actual, se puede   crear una carpeta colocando un nombre después del init</p></li>     
+        <li>git status<p>Muestra el estado de los archivos o directorios, en <span class="lRoja">rojo</span> si solo se encuentran en el <span class="lRoja">working directory</span> y <span class="lVerde">verde</span> si está en el <span class="lVerde">Staging area</span></p></li>     
+        <li>git add < file ><p>Agrega el archivo al <span class="lVerde">Staging area</span>, si ponemos un punto agregamos todo lo que esté en la carpeta o <span class="lRoja">working directory</span></p></li>     
+        <li>git rm --cached < file ><p>Eliminamos el archivo del <span class="lVerde">Staging area</span>, para no hacerle commit, el archivo seguirá en el <span class="lRoja">working directory</span></p></li>     
+        <li>git commit -m "message"<p>Mandamos lo que esté en el <span class="lVerde">Staging area</span> al <span class="lAzul">git repository</span></p></li>     
+        <li>git config --list<p>Muestra la configuración de git</p></li>     
+        <li>git config --list --show-origin<p>Muestra donde están las configuraciones guardadas</p></li>     
+        <li>git config --global user.name "NombreUser"<p>Se establece el nombre del usuario</p></li>     
+        <li>git config --global user.email "user@email.com"<p>Se establece el correo del usuario</p></li>     
+        <li>git show"<p>Muestra el historial de cambios</p></li>     
+        <li>git log"<p>Muestra el historial de registros con detalles</p></li>     
+    
+    </ul>
+
+    
+</body>
+</html>
