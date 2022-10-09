@@ -1,49 +1,67 @@
-*{
-    font-family: 'Lucida Sans Unicode';
-    color: white;
+* {
+  font-family: "Lucida Sans Unicode";
+  color: white;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(45, 43, 85);
-    text-align: center;
+body {
+  background-color: rgb(45, 43, 85);
+  text-align: center; 
 }
 
+p {
+  padding: 15px;
+}
+
+/*Acomodar div*/
+.columna {
+  float: left;
+  display: block;
+  width: 50%;
+  padding-right: 5px;
+}
+
+.fila::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  /* Para que sea responsiva */
+  width: 100%;
+}
 
 /*Decoración para cada comando y su descripción*/
 ul li p {
-    
-    padding: 2px;
-    margin: 0;
-    text-align: left;
-    font-family: 'calibria', serif;
-    font-weight: lighter;
+  padding: 2px;
+  margin: 0;
+  text-align: left;
+  font-weight: lighter;
 }
 
-li{
-    font-weight: bold;
-    margin-top: 10px;
-    color: #FFB5B2;
-    text-align: left; 
-    font-family: Verdana;
+li {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffb5b2;
+  text-align: left;
+  font-family: Verdana;
 }
 
-.lRoja{
-    font-family: 'calibria', serif;
-    font-weight: bold;
-    display: inline;
-    color: rgb(255, 62, 62);
+.lRoja {
+  font-weight: bold;
+  display: inline;
+  color: rgb(255, 62, 62);
 }
 
-.lVerde{
-    font-family: 'calibria', serif;
-    font-weight: bold;
-    display: inline;
-    color: #7BFF8C;
+.lVerde {
+  font-weight: bold;
+  display: inline;
+  color: #7bff8c;
 }
 
-.lAzul{
-    font-family: 'calibria', serif;
-    font-weight: bold;
-    display: inline;
-    color: #43C9F4;
+.lAzul {
+  font-weight: bold;
+  display: inline;
+  color: #43c9f4;
 }
