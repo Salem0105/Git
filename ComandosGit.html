@@ -127,25 +127,29 @@
         <img src="image/Clase 11 git.png" />
       </div>
     </div>
-    <p>Vamos a intentar devolver el tiempo 😎</p>
+    <b><p>Vamos a intentar devolver el tiempo con git 😎</p></b>
 
     <ul>
       <li>
-        git reset < code commit > --soft
+        git reset [SHA 1] --soft
         <p>
           Volvemos a la version del commit indicado, borando los commit
           posteriores, pero sin borrar los archivos o contenido ya escrito,
           además, el contenido guardado en el área de staging permanece ahí,
-          listo para hacer un commit
+          listo para ser enviado al <span class="lAzul">repositorio git</span>
         </p>
       </li>
       <li>
-        git reset < code commit > --hard
+        git reset --hard [SHA 1]
         <p>
           Volvemos a la version del commit indicado,
           <span class="lRoja">Borrando todo</span> los commit posteriores y los
           archivos a la version indicada
         </p>
+      </li>
+      <li>
+        git reset --mixed [SHA 1]
+        <p>E      limina los cambios hasta el working area</p>
       </li>
     </ul>
 
