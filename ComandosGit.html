@@ -36,18 +36,10 @@
         </p>
       </li>
       <li>
-        git add < file >
+        git add [file]
         <p>
           Agrega el archivo al <span class="lVerde">Staging area</span>, si
           ponemos un punto agregamos todo lo que esté en la carpeta o
-          <span class="lRoja">working directory</span>
-        </p>
-      </li>
-      <li>
-        git rm --cached < file >
-        <p>
-          Eliminamos el archivo del <span class="lVerde">Staging area</span>,
-          para no hacerle commit, el archivo seguirá en el
           <span class="lRoja">working directory</span>
         </p>
       </li>
@@ -103,17 +95,17 @@
         </p>
       </li>
       <li>
-        git diff < code commit > < code commit >
+        git diff [code commit][code commit]
         <p>Nos compara dos commit por código</p>
       </li>
     </ul>
     <p>
       Hasta acá todo bien, lo que bien ahora son comandos de control de
       versiones muy importantes, como regresar, eliminar, modificar o crear
-      ramas. Por último, para tener en cuenta:
+      ramas.
     </p>
 
-    <div class="fila">
+    <!-- <div class="fila">
       <div class="columna">
         <img src="image/Clase 8 git.png" />
       </div>
@@ -126,7 +118,7 @@
       <div class="columna">
         <img src="image/Clase 11 git.png" />
       </div>
-    </div>
+    </div> -->
     <b><p>Vamos a intentar devolver el tiempo con git 😎</p></b>
 
     <ul>
@@ -149,7 +141,34 @@
       </li>
       <li>
         git reset --mixed [SHA 1]
-        <p>E      limina los cambios hasta el working area</p>
+        <p>Este limina los cambios hasta el working area</p>
+      </li>
+      <li>
+        git reset HEAD
+        <p>
+          ste es el comando para sacar archivos del área de staging. No para
+          borrarlos ni nada de eso, solo para que los últimos cambios de estos
+          archivos no se envíen al último commit, a menos que cambiemos de
+          opinión y los incluyamos de nuevo en staging con git add, por
+          supuesto.
+        </p>
+      </li>
+      <li>
+        git rm --force [file]
+        <p>
+          Este limina los archivos del
+          <span class="lRoja">working directory</span> y del
+          <span class="lVerde">Staging area</span>, pero no del
+          <span class="lAzul">repository</span>
+        </p>
+      </li>
+      <li>
+        git rm --cached [file]
+        <p>
+          Eliminamos el archivo del <span class="lVerde">Staging area</span>,
+          para no hacerle commit, el archivo seguirá en el
+          <span class="lRoja">working directory</span>
+        </p>
       </li>
     </ul>
 

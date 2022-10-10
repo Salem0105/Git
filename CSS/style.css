@@ -5,12 +5,13 @@
 }
 
 body {
-  background-color: rgb(45, 43, 85);
-  text-align: center; 
+  margin: 5px;
+  padding: 5px;
+  background-color: #121F3D;
 }
 
-p {
-  padding: 15px;
+h1 {
+  text-align: center;
 }
 
 /*Acomodar div*/
@@ -43,7 +44,7 @@ ul li p {
 li {
   font-weight: bold;
   margin-top: 10px;
-  color: #ffb5b2;
+  color: #ff918e;
   text-align: left;
   font-family: Verdana;
 }

@@ -1,0 +1,3 @@
+Una nota para la aplicación
+quiero que lo vea el master 
+cuando se haga un merge
