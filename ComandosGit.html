@@ -146,7 +146,7 @@
       <li>
         git reset HEAD
         <p>
-          ste es el comando para sacar archivos del área de staging. No para
+          Este es el comando para sacar archivos del área de staging. No para
           borrarlos ni nada de eso, solo para que los últimos cambios de estos
           archivos no se envíen al último commit, a menos que cambiemos de
           opinión y los incluyamos de nuevo en staging con git add, por
@@ -170,6 +170,33 @@
           <span class="lRoja">working directory</span>
         </p>
       </li>
+      <li>
+        git remote add [nombre] "URL"
+        <p>Guardar la URL del repositorio de GitHub con el nombre de origin</p>
+      </li>
+      <li>
+        git remote -v
+        <p>Verificar que la URL se haya guardado correctamente</p>
+      </li>
+      <li>
+        git pull origin master --allow-unrelated-histories
+        <p>
+          Traer la versión del repositorio remoto y hacer merge para crear un
+          commit con los archivos de ambas partes.
+        </p>
+      </li>
+      <li>
+        git push origin master
+        <p>
+          Hacer git push para guardar los cambios de nuestro repositorio local
+          en GitHub
+        </p>
+      </li>
+      <li>
+        git remote remove [name]
+        <p>Eliminar la URL que guardamos con ese nombre</p>
+      </li>
+      
     </ul>
 
     <footer></footer>
