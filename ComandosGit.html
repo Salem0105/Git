@@ -193,10 +193,36 @@
         </p>
       </li>
       <li>
-        git remote remove [name]
-        <p>Eliminar la URL que guardamos con ese nombre</p>
+        git remote remove "name"
+        <p>Eliminar la URL que guardamos con ese nombre, ejemplo: "origin"</p>
       </li>
-      
+      <li>
+        ssh-keygen -t rsa -b 4096 -C "email"
+        <p>
+          Primero: Estar en la carpeta home de tu sistema, con el comando [cd ~]
+          <br />
+          Segundo: Seleccionar la carpeta donde se quiere guardar las llaves
+          <br />
+          Tercero: Poner una contraseña
+        </p>
+      </li>
+      <li>
+        eval $(ssh-agent -s)
+        <p>Evalúa que el proceso SSH esté corriendo</p>
+      </li>
+      <li>
+        ssh-add ruta-donde-guardaste-tu-llave-privada
+        <p>Añadir tu llave SSH a este “servidor”</p>
+      </li>
+      <li>
+        git remote set-url "ejemplo:origin" url-ssh-del-repositorio-en-github
+        <p>Añadir tu llave SSH a este “servidor”</p>
+      </li>
+      <p>
+        ¡Antes de hacer un commit, se deben traer las actualizaciones del
+        repositorio de GitHub! <br />
+        Priemro hacemos [git pull origin main] y luego push
+      </p>
     </ul>
 
     <footer></footer>
