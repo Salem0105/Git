@@ -170,6 +170,9 @@
           <span class="lRoja">working directory</span>
         </p>
       </li>
+    </ul>
+    <h2>Conectando con GitHub</h2>
+    <ul>
       <li>
         git remote add [nombre] "URL"
         <p>Guardar la URL del repositorio de GitHub con el nombre de origin</p>
@@ -221,8 +224,35 @@
       <p>
         ¡Antes de hacer un commit, se deben traer las actualizaciones del
         repositorio de GitHub! <br />
-        Priemro hacemos [git pull origin main] y luego push
+        Priemro hacemos [git pull origin main] y luego [git push origin main]
       </p>
+    </ul>
+    <h2>Tags</h2>
+    <p>
+      Los tags o etiquetas nos permiten asignar versiones a los commits con
+      cambios más importantes o significativos de nuestro proyecto.
+    </p>
+    <ul>
+      <li>
+        git tag -a nombre-del-tag -m "mensaje" id-del-commit
+        <p>Crear un nuevo tag y asignarlo a un commit</p>
+      </li>
+      <li>
+        git tag -d nombre-del-tag
+        <p>Borrar un tag en el repositorio local</p>
+      </li>
+      <li>
+        git tag o git show-ref --tags
+        <p>Listar los tags de nuestro repositorio local, mostrando a qué commit está relacionado</p>
+      </li>
+      <li>
+        git push origin --tags
+        <p>Publicar un tag en el repositorio remoto</p>
+      </li>
+      <li>
+        git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag
+        <p>Borrar un tag del repositorio remoto</p>
+      </li>
     </ul>
 
     <footer></footer>
