@@ -51,6 +51,10 @@
         </p>
       </li>
       <li>
+        git commit --ammend
+        <p>Agrega los cambios al ultimo commit en caso de error</p>
+      </li>
+      <li>
         git config --list
         <p>Muestra la configuración de git</p>
       </li>
@@ -243,7 +247,10 @@
       </li>
       <li>
         git tag o git show-ref --tags
-        <p>Listar los tags de nuestro repositorio local, mostrando a qué commit está relacionado</p>
+        <p>
+          Listar los tags de nuestro repositorio local, mostrando a qué commit
+          está relacionado
+        </p>
       </li>
       <li>
         git push origin --tags
@@ -252,6 +259,38 @@
       <li>
         git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag
         <p>Borrar un tag del repositorio remoto</p>
+      </li>
+    </ul>
+    <h2>Manejo de Ramas</h2>
+    <p>
+      Las ramas nos permiten hacer cambios a nuestros archivos sin modificar la
+      versión principal (master). Puedes trabajar con ramas que nunca envías a
+      GitHub, así como pueden haber ramas importantes en GitHub que nunca usas
+      en el repositorio local
+    </p>
+    <ul>
+      <li>
+        git branch branchName
+        <p>Para crear una rama</p>
+      </li>
+      <li>
+        git checkout branchName
+        <p>Para movernos entre ramas 🐒</p>
+      </li>
+      <li>
+        git push origin nombre-de-la-rama
+        <p>Mandar la rama al repositorio remoto</p>
+      </li>
+      <li>
+        gitk
+        <p>
+          Gitk fue el primer visor gráfico que se desarrolló para ver de manera
+          gráfica el historial de un repositorio de Git
+        </p>
+      </li>
+      <li>
+        git clone [url]
+        <p>Crea una copia local de un repositorio remoto</p>
       </li>
     </ul>
 
