@@ -1,20 +1,5 @@
-git init // inicia git en la carpeta actual
-git status // ver el estado
-git add <file> //agregar al área de staring el archivo o archivos
-git rm --cached <file> //eliminar del repositorio
-git commit -m "mensaje" //agregar commit con un mensaje
-git config --list //lista de configuración
-git config --global user.name "<name>" //configurar usuario
-//Ahora si por algún motivo te equivocaste en el nombre o email lo puedes modificar de la siguiente manera:
-git config --global --replace-all user.name //Aquí va tu nombre modificado”
-git config --global user.email "<email>" //configurar email
-git add . // agrega todo lo que está en la carpeta actual a git
-git show <file> // muestra rápidamente los cambios realizados
-git log --stat // nos muestra los cambios específicos de cada commit, desde el más reciente al más viejo
-git diff <code commit> <code commit> // nos compara dos commit por código
-git reset <code commit> --soft // volvemos nuestro archivo a la version del commit indicada, pero sin borrar los commits posteriores
-git reset <code commit> --hard // volvemos nuestro archivo a la version del commit indicada, BORRANDO TODO los commit posteriores a la version indicada
-git checkout <code commit> <file>// podremos ver como era el archivo en ese entonces
-git checkout master <file> // regresamos el archivo a su version master
-// hay que tener cuidado con checkout, porque es otra forma de borrar las actualizaciones si hacemos un commit
-
+Soy Yuno
+Trabajo en la rama footer del proyecto
+me gusta borar cosas
+😊
+y eliminar 🤪
