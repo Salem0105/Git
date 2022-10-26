@@ -7,11 +7,18 @@
 body {
   margin: 5px;
   padding: 5px;
-  background-color: #121F3D;
+  background-color: #121f3d;
 }
 
-h1, h2{
+h1,
+h2 {
   text-align: center;
+}
+
+summary,
+p {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*Acomodar div*/
@@ -35,8 +42,6 @@ img {
 
 /*Decoración para cada comando y su descripción*/
 ul li p {
-  padding: 2px;
-  margin: 0;
   text-align: left;
   font-weight: lighter;
 }
@@ -44,7 +49,8 @@ ul li p {
 li {
   font-weight: bold;
   margin-top: 10px;
-  color: #ff918e;
+  color: #98ca3f;
+  /*color: #ff918e; */
   text-align: left;
   font-family: Verdana;
 }
@@ -52,17 +58,17 @@ li {
 .lRoja {
   font-weight: bold;
   display: inline;
-  color: rgb(255, 62, 62);
+  color: #ff4842;
 }
 
 .lVerde {
   font-weight: bold;
   display: inline;
-  color: #7bff8c;
+  color: #98ca3f;
 }
 
 .lAzul {
   font-weight: bold;
   display: inline;
-  color: #43c9f4;
+  color: #74caff;
 }

@@ -7,7 +7,7 @@
     <title>GIT_HTML_CSS</title>
     <link
       rel="shortcut icon"
-      href="https://drive.google.com/file/d/1bQsN1PmeZ9MVYTxgITW0WJSeo88MlMVX/view"
+      href="https://cdn-icons-png.flaticon.com/512/8016/8016946.png"
       class="rel"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -208,7 +208,10 @@
       </li>
       <li>
         ssh-add ruta-donde-guardaste-tu-llave-privada
-        <p>Añadir tu llave SSH a este “servidor”</p>
+        <p>
+          Ya tendremos configurada nuestra llave privada para poder conectarnos
+          a través de SSH con GitHub
+        </p>
       </li>
       <li>
         git remote set-url "ejemplo:origin" url-ssh-del-repositorio-en-github
@@ -267,6 +270,14 @@
         <p>Para movernos entre ramas 🐒</p>
       </li>
       <li>
+        git checkout [code commit] [file]
+        <p>
+          Podremos ver como era el archivo en ese entonces, hay que tener
+          cuidado con checkout, porque es otra forma de borrar las
+          actualizaciones si hacemos un commit
+        </p>
+      </li>
+      <li>
         git push origin nombre-de-la-rama
         <p>Mandar la rama al repositorio remoto</p>
       </li>
@@ -281,8 +292,104 @@
         git clone [url]
         <p>Crea una copia local de un repositorio remoto</p>
       </li>
+      <li>
+        git branch -D nombreRama
+        <p>Se utiliza para eliminar ramas en git</p>
+      </li>
+      <li>
+        git merge nombreRama
+        <p>
+          Este comando es súper importante, se utiliza cuando quieres unir los
+          cambios entre 2 ramas, el merge ocurre en la rama en la que se está
+          posicionado. Por lo tanto, la rama a fusionar se transforma en la
+          principal. Los merges también son commits. Los merges pueden generar
+          conflictos, esto aborta la acción y pide que soluciones el problema
+          manualmente, aceptando o rechazando los cambios que vienen. Los
+          archivos con conflictos por el comando git merge entran en un nuevo
+          estado que conocemos como Unmerged. Una vez solucionado el conflicto,
+          se debe hacer un commit.
+        </p>
+      </li>
+      <li>
+        git merge --abort
+        <p>Si nos hemos equivocado y queremos cancelar el merge</p>
+      </li>
+      <li>
+        git push [remote] --delete [branch]
+        <p>Este es el comando para borrar una branch remota</p>
+      </li>
+      <li>
+        git fetch [remote] [branch]
+        <p>
+          traer actualizaciones del servidor remoto y guardarlas en nuestro
+          repositorio local
+        </p>
+      </li>
+      <li>
+        git fetch -p
+        <p>Intenta sincronizar tu lista de branches</p>
+      </li>
+    </ul>
+    <h2>Pull request</h2>
+    <p>
+      Pull request es una funcionalidad de Github, al hacer un pull request, se
+      genera una conversación que pueden seguir los demás usuarios del
+      repositorio, así como autorizar y rechazar los cambios.
+    </p>
+    <ul>
+      <li>
+        <p>
+          Se trabaja en una rama paralela los cambios que se desean git checkout
+          -b [rama]
+        </p>
+      </li>
+      <li>
+        <p>Se hace un commit a la rama git commit -am 'Comentario'</p>
+      </li>
+      <li>
+        <p>Se suben al remoto los cambios git push origin [rama]</p>
+      </li>
+      <li>
+        <p>
+          En GitHub se hace el pull request comparando la rama master con la
+          rama del fix
+        </p>
+      </li>
+      <li>
+        <p>
+          Uno, o varios colaboradores revisan que el código sea correcto y dan
+          feedback
+        </p>
+      </li>
+      <li>
+        <p>
+          El colaborador hace los cambios que desea en la rama y lo vuelve a
+          subir al remoto (automáticamente jala la historia de los cambios que
+          se hagan en la rama, en remoto)
+        </p>
+      </li>
+      <li>
+        <p>Se aceptan los cambios en GitHub.</p>
+      </li>
+      <li>
+        <p>Se hace merge a master desde GitHub.</p>
+      </li>
     </ul>
 
+    <h2>Para Buscar</h2>
+    <ul>
+      <li>
+        git grep
+        <p>
+          se usa para buscar texto en nuestros archivos del repositorio, puedes
+          ver la cantidad de veces que se usa una palabra, incluso incluir
+          expresiones regulares. <br />
+          Un ejemplo sería usar [git gre -n "palabra"] para ver en que archivos
+          y que líneas esta la palabra "palabra" o [git grep -c palabra] para
+          ver la cantidad de veces que se repite la palabra "palabra"
+        </p>
+      </li>
+    </ul>
     <footer></footer>
   </body>
 </html>
